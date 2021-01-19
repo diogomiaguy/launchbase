@@ -12,6 +12,37 @@
 ### 🚀 Fase 02
 - [x] Introdução à programação web
 - [x] Iniciando no Front-end
+- [x] Construindo o Foodfy
+- [ ] Iniciando no Back-end
+- [ ] Refatorando Foodfy
 
-### 🚀 Contruindo Foodfy
-- [x] Foodfy
+### 🚀 Fase 03
+- [ ] Controle de Academia
+- [ ] Admin Foodfy
+- [ ] Persistindo dados da aplicação
+- [ ] Persistindo dados do Foodfy
+
+### 🚀 Fase 04
+- [ ] Launchstore
+- [ ] Upload de imagens
+- [ ] Upload de imagens Foodfy
+- [ ] Listando os Produtos da Launchstore
+- [ ] Apresentação e Organização das Receitas no Foodfy
+- [ ] Cadastrando Usuários
+- [ ] Controle da sessão de usuário
+- [ ] Sistema de Login Foodfy
+
+### 🚀 Fase 05
+- [ ] NodeJS Avançado
+- [ ] Conceitos Avançados
+- [ ] Funcionalidades extras para a Launchstore
+
+### 🚀 Bônus - Git e Gihub
+- [ ] Git e Gihub
+
+### 🚀 Bônus - Terminal Unix
+- [ ] Bônus - Terminal Unix
+
+### 🚀 Bônus - Next Level Week
+- [ ] Next Level Week Starter
+- [ ] Next Level Week 02 Discovery
