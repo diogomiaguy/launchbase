@@ -1,0 +1,26 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+  <main>
+    <div class="video">
+
+      <div class="card" id="{{ item.id }}">
+
+        <div class="card__video-container">
+          <iframe src="https://www.youtube.com/embed/{{ item.id }}" frameborder="0"></iframe>
+        </div>
+
+        <p class="titulo-card">
+          {{ item.title }}
+        </p>
+
+        <div class="links-card">
+          <p>{{ item.duration }}</p>
+          <p class="preco">{{ item.price }}</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+{% endblock %}

@@ -147,7 +147,7 @@ nav a:hover {
   border-radius: 5px;
 }
 
-/* MODAL===== */
+/* MODAL=====
 .modal-overlay {
   width: 100%;
   height: 100vh;
@@ -188,4 +188,28 @@ nav a:hover {
 iframe {
   width: 100%;
   height: 90%;
+} */
+
+/* PAGE VIDEO */
+.video {
+  max-width: 900px;
+  margin: 50px auto;
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 1fr;
+  grid-auto-flow: dense;
+}
+
+.card__video-container {
+  position: relative;
+  /* max-width: 100%; */
+  /* height: 500px; */
+  padding-top: 40%;
+}
+
+.card__video-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
 }
