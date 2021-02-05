@@ -5,6 +5,8 @@
 
 > Domine programação do zero e tenha acesso às melhores oportunidades do mercado
 
+> As anotações estão em: https://www.notion.so/LaunchBase-b54a23d23c2d449c8d8bcdc29b112722
+
 ### 🚀 Fase 01
 - [x] Preparação e Estudos
 - [x] Ambiente de Desenvolvimento
@@ -13,7 +15,7 @@
 - [x] Introdução à programação web
 - [x] Iniciando no Front-end
 - [x] Construindo o Foodfy
-- [ ] Iniciando no Back-end
+- [x] Iniciando no Back-end
 - [ ] Refatorando Foodfy
 
 ### 🚀 Fase 03
