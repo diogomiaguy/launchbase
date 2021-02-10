@@ -5,32 +5,24 @@
   <main>
     <div class="cards">
 
-{% for item in items %}
-      <div class="card" id="{{item.id}}">
-        <img src="{{item.img}}" alt="{{item.title}}">
-        <p class="titulo-card">
-          {{item.title}}
-        </p>
+      {% for item in items %}
+        <div class="card" id="{{item.id}}">
+          <img src="{{item.img}}" alt="{{item.title}}">
+          <p class="titulo-card">
+            {{item.title}}
+          </p>
 
-        <div class="links-card">
-          <p>{{item.duration}}</p>
-          <p class="preco">{{item.price}}</p>
+          <div class="links-card">
+            <p>{{item.duration}}</p>
+            <p class="preco">{{item.price}}</p>
+          </div>
         </div>
-      </div>
-{% endfor %}
-
-      
+      {% endfor %}
 
     </div>
   </main>
 
-  <!--div class="modal-overlay">
-    <div class="modal">
-      <p class="fechar-modal">[fechar]</p>
-      <iframe src="" frameborder="0"></iframe>
-
-    </div>
-  </div-->
+  <!--div class="modal-overlay"> <div class="modal"> <p class="fechar-modal">[fechar]</p> <iframe src="" frameborder="0"></iframe> </div> </div-->
   <!-- JAVASCRIPT -->
   <script src="/js/script.js"></script>
 {% endblock %}
