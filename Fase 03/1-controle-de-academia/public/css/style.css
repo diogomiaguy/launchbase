@@ -67,8 +67,8 @@ nav a:hover::after {
 
 /* CARD  */
 
-.card{
-  background-color:#fff;
+.card {
+  background-color: #fff;
   max-width: 800px;
   min-height: 300px;
   margin: 30px auto;
@@ -80,84 +80,92 @@ nav a:hover::after {
 }
 
 /* AVATAR */
-.card .avatar{
+/* .card .avatar{
   background-image: url('https://source.unsplash.com/collection/2315259/500x500');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-}
+} */
 
 /* DETAILS */
-.details{
+.details {
   padding: 32px;
 }
 
-.details .item{
+.details .item {
   padding: 16px 0;
   border-bottom: 1px solid #111;
 }
-.details .item:last-child{
-  border-bottom: none;
-}
 
-.details .item div:nth-child(1){
+.details .item div:nth-child(1) {
   font-size: 14px;
-  line-height:24px;
+  line-height: 24px;
   color: #777;
-  letter-spacing:0.7px;
-  font-weight:normal;
+  letter-spacing: 0.7px;
+  font-weight: normal;
 }
 
-.details .item div:nth-child(2){
+.details .item div:nth-child(2) {
   color: #555;
   font-weight: bold;
   font-size: 18px;
 }
 
-.details h3{
+.details .item:last-child {
+  border-bottom: none;  
+}
+
+.details h3 {
   text-transform: uppercase;
   font-weight: bold;
   color: var(--primary-color)
 }
 
-.details .item span{
-  background-color:var(--secondary-color);
+.details .item span {
+  background-color: var(--secondary-color);
   padding: 8px 16px;
   border-radius: 16px;
   color: #777;
   margin-right: 4px;
   margin-top: 8px;
-  display:inline-block;
+  display: inline-block;
   text-transform: uppercase;
   font-size: 12px;
 }
 
 /*  FORM */
-input{
+input {
   width: 100%;
   outline: none;
   color: #555;
   font-weight: bold;
-  font-size:18px
+  font-size: 18px
 }
 
-input[type="radio"]{
-  width:initial;
+input[type="radio"] {
+  width: initial;
   margin-right: 4px;
 }
 
-input::placeholder{
+input::placeholder {
   font-size: 16px;
-  font-weight:normal
+  font-weight: normal
 }
 
-button[type="submit"]{
+button[type="submit"],
+a.button {
   padding: 8px 32px;
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   color: white;
   border-radius: 4px;
   margin-top: 32px;
   width: 100%;
-  font-size:16px;
-  cursor: pointer;
+  font-size: 16px;
+}
+
+a.button{
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
 }
