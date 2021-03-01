@@ -3,29 +3,11 @@
     {
       "id": 1,
       "avatar_url": "https://source.unsplash.com/collection/2315259/200x200",
-      "name": "pokemaobr",
-      "birth": 1615420800000,
+      "name": "Marcos Paulo",
+      "birth": 436147200000,
       "gender": "M",
-      "services": "streamer, gamer, gamerboy",
-      "created_at": 1613228108119
-    },
-    {
-      "id": 2,
-      "avatar_url": "https://source.unsplash.com/collection/2315259/200x200",
-      "name": "Diogo w",
-      "birth": 1615420800000,
-      "gender": "F",
-      "services": "streamer, gamer",
-      "created_at": 1613228136796
-    },
-    {
-      "id": 3,
-      "avatar_url": "https://source.unsplash.com/collection/2315259/200x200",
-      "name": "4ª Semana",
-      "birth": 1291248000000,
-      "gender": "F",
-      "services": "streamer, gamer",
-      "created_at": 1613401241161
+      "services": "corredor, natação, luta",
+      "created_at": 1614628857631
     }
   ]
 }

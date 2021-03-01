@@ -16,11 +16,13 @@ routes.get('/instructors/create', function (req, res) {
 
 routes.get('/instructors/:id', instructors.show) // show
 
-routes.get('/instructors/:id/edit', function (req, res) {
-  return res.render('instructors/edit')
-}) // edit
+routes.get('/instructors/:id/edit', instructors.edit) // edit
 
 routes.post('/instructors', instructors.post) // create
+
+routes.put('/instructors', instructors.put)//atualizar
+
+routes.delete('/instructors', instructors.delete) //deletar usuario
 
 routes.get('/members', function (req, res) {
   return res.render('members')
