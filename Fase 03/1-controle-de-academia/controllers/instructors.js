@@ -1,9 +1,14 @@
 const fs = require('fs');
-const data = require('./data.json')
+const data = require('../data.json')
 const {
   age,
   date
-} = require('./utils')
+} = require('../utils')
+
+// index
+exports.index = function(req, res){
+  return res.render('instructors/index', { instructors: data.instructors })
+}
 
 // show/mostrar
 exports.show = function (req, res) {
@@ -29,6 +34,9 @@ exports.show = function (req, res) {
     instructor
   })
 }
+
+// create create
+exports.create = function (req, res) { return res.render('instructors/create')}
 
 // create
 exports.post = function (req, res) {
@@ -89,7 +97,7 @@ exports.edit = function (req, res) {
 
   const instructor = {
     ...foundInstructor,
-    birth: date(foundInstructor.birth)
+    birth: date(foundInstructor.birth).iso
   }
 
 
@@ -116,7 +124,8 @@ exports.put = function (req, res) {
   const instructor = {
     ...foundInstructor,
     ...req.body, //aqui pega os dados atualizados
-    birth: Date.parse(req.body.birth) //salva no formato timestamp
+    birth: Date.parse(req.body.birth), //salva no formato timestamp
+    id:Number(req.body.id)
   }
 
   //atualizar no data.json

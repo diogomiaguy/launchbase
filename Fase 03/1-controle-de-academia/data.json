@@ -1,13 +1,46 @@
 {
+  "members": [
+    {
+      "avatar_url": "https://images.unsplash.com/photo-1576678927484-cc907957088c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8Z3ltfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
+      "name": "Diego Maromba",
+      "email": "miaguyzando@gmail.com",
+      "birth": 794620800000,
+      "gender": "F",
+      "blood": "A+",
+      "weight": "78",
+      "heigth": "156",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://source.unsplash.com/collection/2315259/200x200",
+      "name": "pokemaobr",
+      "email": "senhormiaguy@hotmail.com",
+      "birth": 1172707200000,
+      "gender": "M",
+      "blood": "A+",
+      "weight": "67",
+      "heigth": "178"
+    }
+  ],
   "instructors": [
     {
       "id": 1,
-      "avatar_url": "https://source.unsplash.com/collection/2315259/200x200",
+      "avatar_url": "https://images.unsplash.com/photo-1576678927484-cc907957088c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8N3x8Z3ltfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60",
       "name": "Marcos Paulo",
       "birth": 436147200000,
       "gender": "M",
       "services": "corredor, natação, luta",
       "created_at": 1614628857631
+    },
+    {
+      "id": 2,
+      "avatar_url": "https://images.unsplash.com/photo-1580261450046-d0a30080dc9b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8Z3ltfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "name": "Diego Maromba",
+      "birth": 660441600000,
+      "gender": "M",
+      "services": "corredor, natação, luta",
+      "created_at": 1614633761234
     }
   ]
 }
