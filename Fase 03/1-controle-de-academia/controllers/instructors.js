@@ -115,11 +115,16 @@ exports.put = function (req, res) {
 
   const foundInstructor = data.instructors.find(function (instructor, foundIndex) {
     if( id == instructor.id ) {
+      console.log(foundIndex)
       index = foundIndex
+      console.log(index)
+
       return true
     }
   })
   if (!foundInstructor) return res.send("Nao encontrado")
+
+
 
   const instructor = {
     ...foundInstructor,

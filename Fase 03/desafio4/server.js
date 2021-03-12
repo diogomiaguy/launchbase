@@ -1,24 +1,26 @@
+// REQUIRE
 const express = require('express')
 const nunjucks = require('nunjucks')
-const server = express()
 const routes = require('./routes')
-const port = 3000
+const methodOverride = require('method-override')
 
-server.use(express.urlencoded({ extended: true }))
-//config css, js...
-server.use(express.static('public'))
-// config nunjucks
+const server = express()
+
+//SET
 server.set('view engine', 'njk')
 nunjucks.configure('views', {
   autoescape: true,
   express: server,
   noCache: true
-})
+});
 
-// rotas
+//USE
+server.use(express.urlencoded({ extended: true }))
+server.use(express.static('public'))
+server.use(methodOverride('_method'))
 server.use(routes)
 
 //ligar server
-server.listen(port, function () {
-  console.log('listening on port ' + port)
+server.listen(3000, function () {
+  console.log('listening on port 3000')
 })

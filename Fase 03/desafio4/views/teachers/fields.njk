@@ -1,0 +1,43 @@
+
+        <div class="card__details--item">
+          <div>Avatar url</div>
+          <input type="url" name="avatar_url" placeholder="http://" value="{{ teacher.avatar_url}}">
+        </div>
+        <div class="card__details--item">
+          <div>Nome completo</div>
+          <input type="text" name="name" placeholder="Nome do professor(a)" value="{{ teacher.name}}">
+        </div>
+        <div class="card__details--item">
+          <div>Data de nascimento</div>
+          <input type="date" name="birth" value="{{ teacher.birth}}">
+        </div>
+        <div class="card__details--item">
+          <div>Grau de escolaridade</div>
+          <select name="scholarity" id="">
+            <option value="Ensino Médio Completo" {% if teacher.scholarity == 'Ensino Médio Completo' %} selected="selected" {% endif %}>
+              Ensino Médio Completo
+              <option value="Ensino Superior Completo" {% if teacher.scholarity == 'Ensino Superior Completo' %} selected="selected" {% endif %}>
+                Ensino Superior Completo
+                <option value="Mestrado" {% if teacher.scholarity == 'Mestrado' %} selected="selected" {% endif %}>
+                  Mestrado
+                  <option value="Doutorado" {% if teacher.scholarity == 'Doutorado' %} selected="selected" {% endif %}>
+                    Doutorado
+                  </select>
+                </div>
+                <div class="card__details--item">
+                  <div>Tipo de aula</div>
+                  <div>
+                    <span>
+                      <input type="radio" name="modality" {% if teacher.modality == "Presencial" %} checked="checked" {% endif %} value="Presencial">Presencial
+                    </span>
+                    <span>
+                      <input type="radio" name="modality" {% if teacher.modality == "À distância" %} checked="checked" {% endif %} value="À distância">À distância
+                    </span>
+                  </div>
+                </div>
+                <div class="card__details--item">
+                  <div>Área de atuação</div>
+                  <input type="text" name="services" placeholder="Separe os serviços prestados por vírgula" value="{{ teacher.services}}">
+                </div>
+                <button type="submit">Salvar</button>
+             
